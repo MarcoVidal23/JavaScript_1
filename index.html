@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+  </head>
+  <body>
+    <img src="./assets/img/Laptop.png" alt=" Laptop" />
+
+    <h2>Valor Base $600.000</h2>
+    <br />
+    <br />
+    <div>
+      <h1>Cantidad</h1>
+      <h1 id="c-1">0</h1>
+    </div>
+    <button
+      onclick="
+parrafo3 = document.querySelector('#c-1')
+stotal = document.querySelector('#t-1')
+cantidad = Number(parrafo3.innerHTML)
+cantidad = cantidad + 1
+parrafo3.innerHTML = cantidad
+total = Number(stotal.innerHTML)
+total = cantidad * 600000
+ stotal.innerHTML = '$' + total"
+    >
+      +
+    </button>
+    <button
+      onclick="
+    parrafo3 = document.querySelector('#c-1')
+    stotal = document.querySelector('#t-1')
+cantidad = Number(parrafo3.innerHTML)
+if (cantidad) 
+cantidad = cantidad - 1
+parrafo3.innerHTML = cantidad
+total = Number(stotal.innerHTML)
+total = cantidad * 600000
+ stotal.innerHTML ='$' + total"
+    >
+      -
+    </button>
+    <div>
+      <h1>Total</h1>
+      <h1 id="t-1">0</h1>
+    </div>
+  </body>
+</html>
